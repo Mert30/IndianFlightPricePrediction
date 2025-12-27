@@ -2,11 +2,11 @@
 
 A machine learning project to predict flight ticket prices in India using regression models with hyperparameter tuning.
 
-## 📋 Project Overview
+## Project Overview
 
 This project builds an end-to-end machine learning pipeline to predict Indian flight ticket prices. The workflow includes comprehensive exploratory data analysis (EDA), feature engineering, data preprocessing, baseline model training, hyperparameter optimization using RandomizedSearchCV, and model selection.
 
-## 📊 Dataset
+## Dataset
 
 **Source:** [Indian Flight Dataset - Kaggle](https://www.kaggle.com/datasets/neurocipher/indian-flight-dataser)
 
@@ -19,7 +19,7 @@ This project builds an end-to-end machine learning pipeline to predict Indian fl
 - Additional information about flights
 - Target: Flight ticket price (in ₹)
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 The project includes comprehensive analysis across multiple dimensions:
 
@@ -44,7 +44,7 @@ The project includes comprehensive analysis across multiple dimensions:
 - Month × Weekday demand heatmaps
 - Season × Month relationships
 
-## 🛠️ Feature Engineering
+## Feature Engineering
 
 **Temporal Features (Cyclical Encoding):**
 
@@ -66,7 +66,7 @@ The project includes comprehensive analysis across multiple dimensions:
 - `duration` - Flight duration in minutes (converted from "2h 50m" format)
 - `total_stops` - Number of stops
 
-## 📈 Data Preprocessing
+## Data Preprocessing
 
 **Preprocessing Pipeline:**
 
@@ -76,7 +76,7 @@ The project includes comprehensive analysis across multiple dimensions:
 
 **Total Features After Preprocessing:** 30+ features (8 numerical + encoded categorical)
 
-## 🤖 Models Trained
+## Models Trained
 
 ### Default Models (Baseline)
 
@@ -103,7 +103,7 @@ Used **RandomizedSearchCV** with:
 - **Decision Tree:** max_depth, min_samples_split, min_samples_leaf
 - **Random Forest:** n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 **Metrics Used:**
 
@@ -113,7 +113,7 @@ Used **RandomizedSearchCV** with:
 
 **Best Model:** [Best performing tuned model based on R² score]
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 IndianFlightPricePrediction/
@@ -126,7 +126,7 @@ IndianFlightPricePrediction/
     └── best_params.pkl                # Best hyperparameters
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -161,7 +161,7 @@ X_new_preprocessed = preprocessor.transform(X_new)
 predicted_prices = model.predict(X_new_preprocessed)
 ```
 
-## 📊 Model Performance
+## Model Performance
 
 ### Comparison: Before vs After Hyperparameter Tuning
 
@@ -181,7 +181,7 @@ The hyperparameter tuning process improved model performance across all models:
 - Actual vs Predicted scatter plots for best models
 - Line plot showing all 6 models' performance improvement
 
-## 🔧 Hyperparameter Tuning Results
+## Hyperparameter Tuning Results
 
 **Process:**
 
@@ -198,7 +198,7 @@ The hyperparameter tuning process improved model performance across all models:
 - Test set metrics (MAE, RMSE, R²)
 - Detailed comparison dataframes
 
-## 💾 Model Persistence
+## Model Persistence
 
 The best tuned model and all necessary artifacts are saved for production use:
 
@@ -215,7 +215,7 @@ The best tuned model and all necessary artifacts are saved for production use:
 4. **Cyclical Features:** Cyclical encoding of temporal features captures seasonal patterns effectively
 5. **Model Selection:** Ensemble methods (Random Forest) generally outperform linear models
 
-## 🎯 Next Steps
+## Next Steps
 
 Potential improvements and extensions:
 
@@ -226,13 +226,13 @@ Potential improvements and extensions:
 5. **Time Series Analysis** - Capture temporal dependencies
 6. **Deep Learning** - Neural networks for non-linear patterns
 
-## 📧 Contact & Notes
+## Contact & Notes
 
 - **Dataset Source:** Kaggle Indian Flight Dataset
 - **Tools Used:** Python, scikit-learn, pandas, matplotlib, seaborn
 - **Jupyter Notebook:** IndianFlightPricePrediction.ipynb
 
-## 📜 License
+## License
 
 Dataset sourced from Kaggle. Check original dataset for license information.
 
